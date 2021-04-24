@@ -26,17 +26,17 @@ fi
 while true; do
   $(command -v apt) update -yqq && $(command -v apt) upgrade -yqq
   if [[ ! -x $(command -v git) ]];then sudo $(command -v apt) install git -yqq;fi
+  if [[ -d "/opt/traefik " ]];then $(command -v rm) -rf /opt/traefik;fi
+  if [[ ! -d "/opt/traefik" ]];then cd /opt/ && git clone --quiet https://github.com/doob187/Traefikv2.git /opt/traefik;fi
+  if [[ -d "/opt/apps" ]];then $(command -v rm) -rf /opt/apps;fi
+  if [[ ! -d "/opt/apps" ]];then cd /opt/ && git clone --quiet https://github.com/doob187/traefikv2apps.git /opt/apps;fi
   headinterface
 done
 }
 traefik() {
-if [[ -d "/opt/traefik " ]];then $(command -v rm) -rf /opt/traefik && git clone --quiet https://github.com/doob187/Traefikv2.git /opt/traefik;fi
-if [[ ! -d "/opt/traefik " ]];then sudo sudo git clone --quiet https://github.com/doob187/Traefikv2.git /opt/traefik;fi
 cd /opt/traefik && $(command -v bash) install.sh
 }
 traefikapp() {
-if [[ -d "/opt/apps" ]];then $(command -v rm) -rf /opt/apps && git clone --quiet https://github.com/doob187/traefikv2apps.git /opt/apps;fi
-if [[ ! -d "/opt/apps" ]];then git clone --quiet https://github.com/doob187/traefikv2apps.git /opt/apps;fi
 cd /opt/apps && $(command -v bash) install.sh
 }
 headinterface() {
