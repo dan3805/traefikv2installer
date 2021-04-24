@@ -21,7 +21,7 @@ https://discord.gg/A7h7bKBCVa
 ```
 Or create one issue 
 ```
-https://github.com/doob187/traefikv2apps/issues
+https://github.com/doob187/traefikv2installer
 ```
 
 ## Contributors ✨
