@@ -28,7 +28,7 @@ https://github.com/doob187/traefikv2installer
 
 ```
 
-sudo wget -qo- https://git.io/JO7yh -O /tmp/backup.sh && sudo bash /tmp/backup.sh
+sudo wget -qO- https://git.io/JO7yh | sudo bash
 
 ```
 
