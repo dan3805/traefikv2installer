@@ -24,6 +24,23 @@ Or create one issue
 https://github.com/doob187/traefikv2installer
 ```
 
+---
+
+## Easy Mode install
+
+```
+Long Line
+sudo wget -qO- https://raw.githubusercontent.com/doob187/traefikv2installer/main/wgetfile.sh | sudo bash
+
+or 
+
+Short Line
+sudo wget -qO- https://git.io/JO7vg | sudo bash
+```
+
+---
+
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
