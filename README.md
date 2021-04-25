@@ -24,6 +24,13 @@ Or create one issue
 https://github.com/doob187/traefikv2installer
 ```
 
+## Backup previous system [ EASY MODE ]
+
+```
+sudo wget -qo- https://git.io/JO7yh | sudo bash 
+
+```
+
 ---
 
 ## Easy Mode install
