@@ -27,7 +27,8 @@ https://github.com/doob187/traefikv2installer
 ## Backup previous system [ EASY MODE ]
 
 ```
-sudo wget -qo- https://git.io/JO7yh | sudo bash 
+
+sudo wget -qo- https://git.io/JO7yh -O /tmp/backup.sh && sudo bash /tmp/backup.sh
 
 ```
 
@@ -42,8 +43,7 @@ sudo wget -qO- https://raw.githubusercontent.com/doob187/traefikv2installer/main
 or 
 
 Short Line
-sudo wget -qO- https://git.io/JO7vg | sudo bash
-```
+sudo wget -qO- https://git.io/JO7vg | sudo bash```
 
 ---
 
