@@ -30,7 +30,7 @@ while true; do
   if [[ ! -d "/opt/traefik" ]];then cd /opt/ && git clone --quiet https://github.com/doob187/Traefikv2.git /opt/traefik;fi
   if [[ -d "/opt/apps" ]];then $(command -v rm) -rf /opt/apps;fi
   if [[ ! -d "/opt/apps" ]];then cd /opt/ && git clone --quiet https://github.com/doob187/traefikv2apps.git /opt/apps;fi
-  headinterface
+  clear && headinterface
 done
 }
 traefik() {
@@ -58,7 +58,7 @@ EOF
     2) clear && traefikapp ;;
     #help|HELP|Help) clear && sectionhelplayout ;;
     Z|z|exit|EXIT|Exit|close) exit ;;
-    *) appstartup ;;
+    *) clear && appstartup ;;
   esac
 }
 ##########
