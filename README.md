@@ -40,10 +40,6 @@ sudo wget -qO- https://git.io/JO7yh | sudo bash
 Long Line
 sudo wget -qO- https://raw.githubusercontent.com/doob187/traefikv2installer/main/wgetfile.sh | sudo bash
 
-or 
-
-Short Line
-sudo wget -qO- https://git.io/JO7vg | sudo bash
 ```
 
 ---
