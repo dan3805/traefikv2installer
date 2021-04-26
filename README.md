@@ -1,7 +1,7 @@
 # traefikv2installer
 Head installer of TraefikV2 Repos
 
----
+----
 
 ## FYI
 ```
@@ -34,7 +34,7 @@ sudo wget -qO- https://git.io/JO7yh | sudo bash
 
 ```
 
----
+----
 
 ## Easy Mode install
 
@@ -48,7 +48,7 @@ sudo wget -qO- https://git.io/JO7vg | sudo bash
 
 ```
 
----
+----
 
 
 ## Contributors ✨
