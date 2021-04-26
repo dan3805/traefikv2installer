@@ -52,6 +52,7 @@ tee <<-EOF
     [ EXIT or Z ] - Exit
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 EOF
+
   read -erp "↘️  Type Number and Press [ENTER]: " headsection </dev/tty
   case $headsection in
     1) clear && traefik ;;
