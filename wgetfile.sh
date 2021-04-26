@@ -16,6 +16,7 @@
 # shellcheck disable=SC2006
 
 sudo $(command -v apt) update -yqq && sudo $(command -v apt) upgrade -yqq
+if [[ ! -x $(command -v git) ]];then sudo $(command -v apt) install git -yqq;fi
 if [[ -d "/opt/installer" ]];then
     sudo $(command -v rm) -rf /opt/installer 
     sudo git clone --quiet https://github.com/doob187/traefikv2installer.git /opt/installer
