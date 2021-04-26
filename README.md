@@ -43,7 +43,8 @@ sudo wget -qO- https://raw.githubusercontent.com/doob187/traefikv2installer/main
 or 
 
 Short Line
-sudo wget -qO- https://git.io/JO7vg | sudo bash```
+sudo wget -qO- https://git.io/JO7vg | sudo bash
+```
 
 ---
 
