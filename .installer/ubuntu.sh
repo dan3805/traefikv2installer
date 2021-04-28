@@ -30,6 +30,8 @@ while true; do
   if [[ ! -d "/opt/traefik" ]];then cd /opt/ && git clone --quiet https://github.com/doob187/Traefikv2.git /opt/traefik;fi
   if [[ -d "/opt/apps" ]];then $(command -v rm) -rf /opt/apps;fi
   if [[ ! -d "/opt/apps" ]];then cd /opt/ && git clone --quiet https://github.com/doob187/traefikv2apps.git /opt/apps;fi
+  if [[ -d "/opt/gdsa" ]];then $(command -v rm) -rf /opt/apps;fi
+  if [[ ! -d "/opt/gdsa" ]];then cd /opt/ && git clone --quiet https://github.com/doob187/traefikv2gdsa.git /opt/gdsa;fi  
   clear && headinterface
 done
 }
@@ -39,6 +41,9 @@ cd /opt/traefik && $(command -v bash) install.sh
 traefikapp() {
 cd /opt/apps && $(command -v bash) install.sh
 }
+gdsabuilder() {
+cd /opt/gdsa && $(command -v bash) install.sh
+}
 headinterface() {
 tee <<-EOF
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -47,6 +52,7 @@ tee <<-EOF
 
     [ 1 ] Traefik V2 - TraefikV2 + Authelia
     [ 2 ] Traefik V2 - Apps
+    [ 3 ] Traefik V2 - GDSA Builder [[ BETA STAGE ]]
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     [ EXIT or Z ] - Exit
@@ -57,6 +63,7 @@ EOF
   case $headsection in
     1) clear && traefik ;;
     2) clear && traefikapp ;;
+    3) clear && gdsabuilder ;;
     #help|HELP|Help) clear && sectionhelplayout ;;
     Z|z|exit|EXIT|Exit|close) exit ;;
     *) clear && appstartup ;;
