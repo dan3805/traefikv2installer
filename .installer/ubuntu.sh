@@ -30,7 +30,7 @@ while true; do
   if [[ ! -d "/opt/traefik" ]];then cd /opt/ && git clone --quiet https://github.com/doob187/Traefikv2.git /opt/traefik;fi
   if [[ -d "/opt/apps" ]];then $(command -v rm) -rf /opt/apps;fi
   if [[ ! -d "/opt/apps" ]];then cd /opt/ && git clone --quiet https://github.com/doob187/traefikv2apps.git /opt/apps;fi
-  if [[ -d "/opt/gdsa" ]];then $(command -v rm) -rf /opt/apps;fi
+  if [[ -d "/opt/gdsa" ]];then $(command -v rm) -rf /opt/gdsa;fi
   if [[ ! -d "/opt/gdsa" ]];then cd /opt/ && git clone --quiet https://github.com/doob187/traefikv2gdsa.git /opt/gdsa;fi  
   clear && headinterface
 done
